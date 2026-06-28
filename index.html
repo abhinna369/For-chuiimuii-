@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>For Chuiimuii ❤️</title>
+
+<style>
+
+body{
+margin:0;
+background:#0f0f15;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+.page{
+min-height:100vh;
+
+display:flex;
+flex-direction:column;
+
+justify-content:center;
+
+padding:30px;
+}
+
+button{
+padding:14px 28px;
+border:none;
+border-radius:30px;
+font-size:18px;
+}
+
+#main{
+display:none;
+}
+
+#timer{
+font-size:28px;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page" id="welcome">
+
+<h1>Hi Chuiimuii ❤️</h1>
+
+<p>
+This started at 10:09 PM
+and never stopped.
+</p>
+
+<button onclick="openPage()">
+Enter
+</button>
+
+</div>
+
+<div class="page" id="main">
+
+<h1>Since 25 Oct 2025</h1>
+
+<div id="timer"></div>
+
+</div>
+
+<script>
+
+function openPage(){
+
+welcome.style.display="none";
+
+main.style.display="flex";
+
+}
+
+const start=
+new Date(
+"2025-10-25T22:09:00+05:30"
+);
+
+function update(){
+
+const now=
+new Date();
+
+const diff=
+now-start;
+
+const days=
+Math.floor(
+diff/86400000
+);
+
+const hours=
+Math.floor(
+diff/3600000
+);
+
+const mins=
+Math.floor(
+diff/60000
+);
+
+const secs=
+Math.floor(
+diff/1000
+);
+
+timer.innerHTML=
+`
+${days} days
+<br>
+${hours} hours
+<br>
+${mins} minutes
+<br>
+${secs} seconds
+`;
+
+}
+
+setInterval(update,1000);
+
+update();
+
+</script>
+
+</body>
+
+</html>
