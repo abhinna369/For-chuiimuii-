@@ -1,64 +1,193 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>For Chuiimuii 💗</title>
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Sundruu × Chuiimuii 🌻🌻</title>
 
 <style>
 
+*{
+box-sizing:border-box;
+}
+
 body{
+
 margin:0;
-background:#0f0f15;
+
+background:
+linear-gradient(
+180deg,
+#090912,
+#171728
+);
+
 color:white;
-font-family:Arial;
+
+font-family:
+Arial;
+
 text-align:center;
+
+overflow-x:hidden;
+
+}
+
+.stars{
+
+position:fixed;
+
+top:0;
+
+width:100%;
+
+font-size:22px;
+
+opacity:.15;
+
+animation:
+float 8s infinite;
+
+}
+
+@keyframes float{
+
+0%{
+transform:
+translateY(0px);
+}
+
+50%{
+transform:
+translateY(20px);
+}
+
+100%{
+transform:
+translateY(0px);
+}
+
 }
 
 #welcome{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-}
 
-button{
-padding:14px 30px;
-border:none;
-border-radius:30px;
-font-size:18px;
-background:#ff7eb6;
-color:white;
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
+animation:
+fade 2s;
+
 }
 
 #main{
+
 display:none;
-padding:30px;
+
+padding:25px;
+
+animation:
+fade 1s;
+
 }
 
-section{
-max-width:700px;
-margin:auto;
+@keyframes fade{
+
+from{
+
+opacity:0;
+
 }
 
-.future-box{
-background:#171722;
-padding:20px;
-border-radius:20px;
-margin-top:40px;
+to{
+
+opacity:1;
+
+}
+
+}
+
+button{
+
+padding:16px 34px;
+
+border:none;
+
+border-radius:999px;
+
+background:
+#ff8bb9;
+
+color:white;
+
+font-size:18px;
+
+}
+
+.box{
+
+background:
+rgba(255,255,255,.04);
+
+padding:28px;
+
+margin:25px auto;
+
+border-radius:28px;
+
+max-width:760px;
+
+backdrop-filter:
+blur(8px);
+
+}
+
+.timer{
+
+font-size:30px;
+
+line-height:1.8;
+
+color:#ffd86a;
+
 }
 
 details{
-margin:20px;
-padding:10px;
-background:#16161f;
-border-radius:14px;
+
+margin-top:18px;
+
+padding:14px;
+
+border-radius:18px;
+
+background:
+rgba(255,255,255,.03);
+
 }
 
 summary{
+
 cursor:pointer;
+
+}
+
+p{
+
+line-height:2;
+
 }
 
 </style>
@@ -67,92 +196,177 @@ cursor:pointer;
 
 <body>
 
+<div class="stars">
+
+✨ 🌻 ✨ 🌙 ⭐ 🌻 ✨
+
+</div>
+
 <div id="welcome">
 
-<h1>For uuu 🌻</h1>
+<h1>
+
+For Chuiimuii 🌻🌻
+
+</h1>
 
 <p>
-A tiny place made with too much feeling.
+
+A tiny place
+made from time.
+
 </p>
 
-<button onclick="openPage()">
-Open 🌙
+<br>
+
+<button
+onclick="openPage()">
+
+Open ❤️
+
 </button>
 
 </div>
 
 <div id="main">
 
-<section>
+<div class="box">
 
-<h1>🌻 Always uuu</h1>
+<h1>
+
+⏳ Our Time
+
+</h1>
+
+<div
+id="timer"
+class="timer">
+
+Loading...
+
+</div>
 
 <p>
 
-Still here.
+Every second that appears here—
 
-Still caring.
+became ours.
 
-Still smiling because uuu exist.
+</p>
+
+</div>
+
+<div class="box">
+
+<h1>
+
+💌 Love Note
+
+</h1>
+
+<p>
+
+Made for us.
+
+For the version of us
+that exists today.
+
+And for the version of us
+that doesn't exist yet—
+
+but maybe is already waiting
+somewhere in our future.
+
+For the mornings
+we haven't shared.
+
+For the photos
+we haven't taken.
+
+For the random messages.
+
+For the small moments
+that won't look important—
+
+but years later—
+
+will become the moments
+we miss most.
+
+If one day
+this timer becomes huge—
+
+I hope we don't look at numbers.
+
+I hope we look at each other
+and smile—
+
+because somehow—
+
+through changing,
+growing,
+learning—
+
+we stayed.
+
+I don't want perfect.
+
+I want ordinary days.
+
+I want random conversations.
+
+I want moments
+where nothing special happens—
+
+but uuu are there.
+
+And maybe—
+
+that's enough.
 
 🌻🌻
 
-<br><br>
-
-— Yours,<br>
-Sundruu
+— Sundruu
 
 </p>
 
-<br><br>
+</div>
 
-<h2>📸 Our Memory Garden</h2>
+<div class="box">
+
+<h1>
+
+📸 Memory Garden
+
+</h1>
 
 <p>
+
 (Add photos later)
-</p>
-
-<br><br>
-
-<h2>💌 Words I Still Want To Tell Uuu</h2>
-
-<p>
-
-Write here...
-
-....................................
-
-....................................
-
-....................................
-
-....................................
 
 </p>
 
-<br><br>
+</div>
+
+<div class="box">
 
 <details>
 
-<summary>🌻 Open when uuu miss me</summary>
+<summary>
+
+🌻 Open when uuu miss me
+
+</summary>
 
 <p>
 
 Close your eyes.
 
-<br><br>
-
-Imagine me sitting beside uuu.
-
-<br><br>
+Imagine me beside uuu.
 
 Nothing special.
 
-<br><br>
-
 Just existing together.
-
-<br><br>
 
 That's enough.
 
@@ -162,26 +376,20 @@ That's enough.
 
 </details>
 
-<br>
-
 <details>
 
-<summary>🌙 Open on difficult days</summary>
+<summary>
+
+🌙 Open on difficult days
+
+</summary>
 
 <p>
 
-Even if today feels heavy—
+Even difficult days end.
 
-don't forget.
-
-<br><br>
-
-Uuu are loved.
-
-<br><br>
-
-And somewhere someone smiles
-because uuu exist.
+And uuu
+don't carry them alone.
 
 🌻
 
@@ -189,27 +397,36 @@ because uuu exist.
 
 </details>
 
-<div class="future-box">
+</div>
 
-<h2>✨ Future</h2>
+<div class="box">
+
+<h1>
+
+✨ Future
+
+</h1>
 
 <p>
 
-More memories.
+Years later—
 
-More late night talks.
+if we open this again—
 
-More smiles.
+I hope
+we smile.
 
-More us.
+And say—
 
-🌻
+wow.
+
+We really made it.
+
+🌻🌻
 
 </p>
 
 </div>
-
-</section>
 
 </div>
 
@@ -217,11 +434,92 @@ More us.
 
 function openPage(){
 
-document.getElementById("welcome").style.display="none";
+document
+.getElementById(
+"welcome"
+)
+.style
+.display=
+"none";
 
-document.getElementById("main").style.display="block";
+document
+.getElementById(
+"main"
+)
+.style
+.display=
+"block";
 
 }
+
+const start=
+
+new Date(
+"2025-10-25T22:09:00+05:30"
+);
+
+function update(){
+
+const now=
+new Date();
+
+const diff=
+now-start;
+
+const days=
+Math.floor(
+diff/
+86400000
+);
+
+const hrs=
+Math.floor(
+(diff%
+86400000)
+/
+3600000
+);
+
+const mins=
+Math.floor(
+(diff%
+3600000)
+/
+60000
+);
+
+const sec=
+Math.floor(
+(diff%
+60000)
+/
+1000
+);
+
+document
+.getElementById(
+"timer"
+)
+
+.innerHTML=
+
+days+
+" days<br>"+
+hrs+
+" hrs "+
+mins+
+" mins "+
+sec+
+" sec";
+
+}
+
+setInterval(
+update,
+1000
+);
+
+update();
 
 </script>
 
